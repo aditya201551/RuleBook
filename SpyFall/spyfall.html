@@ -1,0 +1,250 @@
+Put your HTML text her<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBI Spy Hunt: Game Rules</title>
+    <style>
+        body {
+            background-color: #0a1929;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .game-container {
+            background-color: #0a2d4d;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Arial', sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            color: #ffd700;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000000;
+            font-size: 2.5em;
+        }
+        
+        .section {
+            background-color: #144878;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffd700;
+        }
+        
+        .section h2 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+        
+        .section-no-border {
+            background-color: #144878;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .section-no-border h2 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .flex-item {
+            background-color: #1a5b9a;
+            padding: 10px;
+            border-radius: 5px;
+            width: 48%;
+            margin-bottom: 10px;
+        }
+        
+        .spy-heading {
+            color: #ff5252;
+            margin-top: 0;
+        }
+        
+        .player-heading {
+            color: #7cfc00;
+            margin-top: 0;
+        }
+        
+        .half-width {
+            width: 48%;
+        }
+        
+        .no-bullets {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        
+        .circle-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        
+        .circle {
+            background-color: #1a5b9a;
+            padding: 10px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+        }
+        
+        .highlight-text {
+            color: #ff9d00;
+            font-weight: bold;
+        }
+        
+        .danger-text {
+            color: #ff5252;
+            font-weight: bold;
+        }
+        
+        .success-text {
+            color: #7cfc00;
+            font-weight: bold;
+        }
+        
+        .gold-text {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .centered-text {
+            text-align: center;
+            font-weight: bold;
+            color: #ffd700;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .flex-item, .half-width {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>🔍 FBI SPY HUNT 🕵️</h1>
+        
+        <div class="section">
+            <h2>Game Background</h2>
+            <p>You're an <span class="highlight-text">FBI detective</span>. There's a problem: <span class="danger-text">someone in your department is an enemy spy</span>. Your full department has been brought in. You must question each other to discover the spy.</p>
+        </div>
+
+        <div class="section-no-border">
+            <h2>Requirements</h2>
+            <ul class="no-bullets">
+                <li>🧑‍🤝‍🧑 <strong>Players:</strong> 4-12 people</li>
+                <li>🏢 <strong>Setup:</strong> All in same room or Zoom call</li>
+                <li>📱 <strong>Equipment:</strong> Each player needs a phone, computer, or tablet</li>
+            </ul>
+        </div>
+
+        <div class="section-no-border">
+            <h2>Game Objectives</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h3 class="spy-heading">The Spy</h3>
+                    <p>Try to guess the round's location by inferring from others' questions and answers.</p>
+                </div>
+                <div class="flex-item">
+                    <h3 class="player-heading">Other Players</h3>
+                    <p>Figure out who the spy is through careful questioning and observation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-no-border">
+            <h2>Gameplay Flow</h2>
+            <ol>
+                <li><span class="success-text">Round Length:</span> 6-10 minutes (shorter for smaller groups, longer for larger)</li>
+                <li><span class="success-text">Location Setup:</span> Each player receives a location card. All players except the spy see the same location (e.g., "The Bank"). The spy receives a "Spy" card and doesn't know the location.</li>
+                <li><span class="success-text">Questioning:</span> The game leader starts by asking another player a question about the location (e.g., "Is this place where children are welcome?")</li>
+                <li><span class="success-text">Answering:</span> The questioned player must answer. No follow-up questions allowed. After answering, they ask someone else a question.</li>
+                <li><span class="highlight-text">No Retaliation Questions:</span> You cannot immediately question someone who just questioned you.</li>
+            </ol>
+        </div>
+
+        <div class="flex-container">
+            <div class="section-no-border half-width">
+                <h2>Players Guessing the Spy</h2>
+                <ul class="no-bullets">
+                    <li>🗣️ <strong>Initiate Vote:</strong> Say "I'd like to put [player name] up for vote."</li>
+                    <li>🗳️ <strong>Voting:</strong> Go clockwise, each player votes yes/no</li>
+                    <li>⚠️ <strong>Must be Unanimous:</strong> All players must vote yes to indict</li>
+                    <li>🚫 <strong>Limit:</strong> Each player can initiate only one vote per round</li>
+                </ul>
+            </div>
+
+            <div class="section-no-border half-width">
+                <h2>Spy Guessing Location</h2>
+                <ul class="no-bullets">
+                    <li>🕵️ <strong>Reveal:</strong> Spy can reveal identity at any time</li>
+                    <li>🌍 <strong>Guess:</strong> After revealing, spy guesses the location</li>
+                    <li>⏱️ <strong>End:</strong> The round immediately ends after spy's guess</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-no-border">
+            <h2>Round Ends When</h2>
+            <div class="circle-container">
+                <div class="circle">
+                    <p>Group successfully indicts a player</p>
+                </div>
+                <div class="circle">
+                    <p>Spy guesses the location</p>
+                </div>
+                <div class="circle">
+                    <p>Time runs out</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-no-border">
+            <h2>Scoring System</h2>
+            
+            <div class="flex-item" style="width: auto; margin-bottom: 15px;">
+                <h3 class="spy-heading">Spy Victory</h3>
+                <ul>
+                    <li>🏆 <strong>2 points:</strong> No one is successfully indicted</li>
+                    <li>🏆 <strong>4 points:</strong> A non-spy is successfully indicted</li>
+                    <li>🏆 <strong>4 points:</strong> Spy correctly guesses the location</li>
+                </ul>
+            </div>
+            
+            <div class="flex-item" style="width: auto; margin-bottom: 15px;">
+                <h3 class="player-heading">Non-Spy Victory</h3>
+                <ul>
+                    <li>🏅 <strong>1 point:</strong> Each non-spy player</li>
+                    <li>🏅 <strong>2 points:</strong> Player who initiated successful spy indictment</li>
+                </ul>
+            </div>
+            
+            <p class="centered-text">
+                Play for as many rounds as you like. Highest total score wins!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
